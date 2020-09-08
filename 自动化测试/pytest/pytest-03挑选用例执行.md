@@ -24,7 +24,7 @@ class Test_login:
         assert 3 == 2
 ```
 
-![image-20200905212725796](../../assert/image-20200905212725796.png)
+![image-20200905212725796](../assert/image-20200905212725796.png)
 
 ### 2.指定目录
 
@@ -107,7 +107,7 @@ class Test_error_password_2:
 
 ```
 
-![image-20200905213507734](../../assert/image-20200905213507734.png)
+![image-20200905213507734](../assert/image-20200905213507734.png)
 
 ### 4.根据名字
 
@@ -172,7 +172,7 @@ class Test_错误密码2:
         assert 1 == 1
 ```
 
-![image-20200905214304267](../../assert/image-20200905214304267.png)
+![image-20200905214304267](../assert/image-20200905214304267.png)
 
 运行方法也是一样
 

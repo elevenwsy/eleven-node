@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生列表</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container page-header">
+    <div class="container page-body">
+
+        <div class="col-md-9" role="main">
+            <table class="table table-striped">
+                <a class="btn btn-warning" href="../Web/add" role="button">添加</a>
+                <tr>
+                    <th>编号</th>
+                    <th>学号</th>
+                    <th>姓名</th>
+                    <th>操作</th>
+                </tr>
+                {% for student in students %}
+                    <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td>{{ student.student_no }}</td>
+                        <td>{{ student.student_name }}</td>
+                        <td>
+                            <a class="btn btn-danger" href="../Web/delete?id={{ student.id }}">删除</a>
+                            <a class="btn btn-warning" href="../Web/edit?id={{ student.id }}">修改</a>
+                        </td>
+                    </tr>
+                     {% endfor %}
+            </table>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

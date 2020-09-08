@@ -34,7 +34,7 @@ https://github.com/jcyrss/baiyueheiyu/files/3986495/tcs-selenium.xlsx
 http://127.0.0.1/mgr/sign.html
 ```
 
-![image-20200906101144115](../../assert/image-20200906101144115.png)
+![image-20200906101144115](../assert/image-20200906101144115.png)
 
 ### 3.实战
 
@@ -42,7 +42,7 @@ http://127.0.0.1/mgr/sign.html
 
 目录结构
 
-![image-20200906120316887](../../assert/image-20200906120316887.png)
+![image-20200906120316887](../assert/image-20200906120316887.png)
 
 `lib/webui.py`
 
@@ -110,4 +110,4 @@ class Test_error_login:
 python -m pytest practise -sv
 ```
 
-![image-20200906120208653](../../assert/image-20200906120208653.png)
+![image-20200906120208653](../assert/image-20200906120208653.png)
